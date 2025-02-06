@@ -1,13 +1,70 @@
 <!doctype html>
-<html lang="en">
+< lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+          <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li> </ul>
+      </nav>
+  </header>
+
+  <section id="about">
+      <div class="about-container">
+          <img src="profile.jpg" alt="Your Profile Picture" class="profile-image">
+          <div class="about-text">
+              <h2>About Me</h2>
+              <p>Write a brief and engaging description about yourself.  Mention your skills, interests, and career goals.  This is your chance to make a great first impression!</p>
+              <a href="resume.pdf" target="_blank" class="resume-link">View Resume</a>
+          </div>
+      </div>
+  </section>
+
+  <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-container">
+
+          <div class="project">
+              <img src="project1.jpg" alt="Project 1">
+              <h3>Project Title 1</h3>
+              <p>Short project description. What technologies were used? What was the outcome?</p>
+              <a href="#" target="_blank">Live Demo</a>  </div>
+
+          <div class="project">
+              <img src="project2.jpg" alt="Project 2">
+              <h3>Project Title 2</h3>
+              <p>Short project description.</p>
+              <a href="#" target="_blank">GitHub Repo</a>
+          </div>
+
+          <div class="project">
+              <img src="project3.jpg" alt="Project 3">
+              <h3>Project Title 3</h3>
+              <p>Short project description.</p>
+              <a href="#" target="_blank">Live Demo</a> 
+          </div>
+
+      </div>
+  </section>
+
+  <footer id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: your.email@example.com</p>
+      <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn Profile</a></p>
+      <p>GitHub: <a href="#" target="_blank">Your GitHub Profile</a></p>
+  </footer>
+
+  <script src="script.js"></script> </body>
+
   </body>
 </html>

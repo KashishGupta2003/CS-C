@@ -1,0 +1,130 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Dark gray text color */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center; /* Center the header content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#about {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    gap: 2rem; /* Space between image and text */
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make image circular */
+    object-fit: cover; /* Prevent image distortion */
+}
+
+.about-text {
+    flex: 1; /* Allow text to take up available space */
+}
+
+.resume-link {
+    display: inline-block; /* Make the link a block element */
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#projects {
+    padding: 2rem;
+    background-color: #eee; /* Slightly darker background for projects */
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow projects to wrap to the next line */
+    justify-content: center; /* Center the projects horizontally */
+    gap: 2rem;
+}
+
+.project {
+    width: 350px; /* Adjust width as needed */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflowing image content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.2s; /* Add a smooth transition for hover effect */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Move project up slightly on hover */
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    padding: 1rem;
+    margin: 0;
+}
+
+.project p {
+    padding: 0 1rem 1rem;
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Design (Example - adjust breakpoints as needed) */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .project {
+        width: 90%; /* Make projects take up most of the screen width */
+        margin: 1rem auto; /* Center the projects */
+    }
+}
